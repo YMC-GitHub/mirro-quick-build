@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+image_id=
+user_u=hualei03042013@163.com
+user_p=wuxiaoling521
+hub_address=hub.c.163.com
+hub_ns=yemiancheng
+hub_tag=alpine-node
+my_vm_name=default
+my_dockerfile_path=/docker/bin/mirro-quick-build
+now_step=
+go_to_next_step=
