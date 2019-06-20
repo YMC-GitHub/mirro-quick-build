@@ -13,7 +13,7 @@ hub_address=hub.c.163.com
 # 镜像仓库空间
 hub_ns=yemiancheng
 # 镜像标签
-hub_tag=alpine-node
+hub_tag=alpine-3-8nodejs-8-11-4
 
 ######
 ### 构建
