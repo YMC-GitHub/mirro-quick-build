@@ -1,13 +1,15 @@
 FROM alpine:3.8
 # https://www.alpinelinux.org/posts/Alpine-3.8.0-released.html
 
-ENV NODE_VERSION 8.11.4
+
+ENV NODE_VERSION=8.11.4 \
+  GROUP_NAME=node \
+  USER_NAME=node
 # https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V8.md#8.11.4
 
 # ymc-note-step:add user and group for node
-RUN addgroup -g 1000 node \
-    && adduser -u 1000 -G node -s /bin/sh -D node \
-    # ymc-note-step:install deps
+RUN addgroup -g 1000 ${GROUP_NAME} \
+    && adduser -u 1000 -G ${GROUP_NAME} -s /bin/sh -D ${USER_NAME} \
     && apk add --no-cache \
         libstdc++ \
     && apk add --no-cache --virtual .build-deps \
