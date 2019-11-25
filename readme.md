@@ -9,7 +9,7 @@ define your configuration for the sh file `.build` in `conf.sh`:
 # the docker-machine name
 my_vm_name=default
 
-# the dir of the dockerfile in your docker-machine $my_vm_name 
+# the dir of the dockerfile in your docker-machine $my_vm_name
 
 # the hub info you want to push
 hub_address=hub.c.163.com
